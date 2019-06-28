@@ -9,8 +9,10 @@ todate = today.date()
 
 def check_birthday():
 	if todate < bday:
-		print "Youz a fake"
-	return False
+		return False
+	else:
+		calculate_age()
+
 
 def calculate_age():
 	age_year = todate.year - bday.year
@@ -21,4 +23,4 @@ def calculate_age():
 	print ("You are " + str(age_year) + " years, " + str(age_month) + " months, and " + str(age_day) + " days old")
 
 check_birthday()
-calculate_age()
+
