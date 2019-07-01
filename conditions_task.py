@@ -1,20 +1,24 @@
 n_one = raw_input("Enter a number ")
 n_two = raw_input("Enter a second number ")
 result = 0
-nu_one = int(n_one)
-nu_two = int(n_two)
 
 operation = raw_input("Choose the operation: (+, -, /, *): ")
 
-if nu_one != int(n_one) or nu_two != int(n_two):
-	print ("Invalid Entry")
-elif operation == "+":
-		result = nu_one + nu_two
-elif operation == "-":
-		result = nu_one - nu_two
-elif operation == "/":
-		result = nu_one / nu_two
-elif operation == "*":
-		result = nu_one * nu_two
+if n_one.isdigit() and n_two.isdigit():
+ 	if operation == "+":
+		result = int(n_one)+ int(n_two)
+		print result
+	elif operation == "-":
+		result = int(n_one) - int(n_two)
+		print result
+	elif operation == "/":
+		result = int(n_one) / int(n_two)
+		print result
+	elif operation == "*":
+		result = int(n_one) * int(n_two)
+		print result
+else:
+	print ("Invalid Entry")	
+	
 
-print result
+

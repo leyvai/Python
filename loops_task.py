@@ -25,5 +25,5 @@ for x in lista:
 	print str(x["quantity"]) + " " + x["item"] + " " + str(x["price"]) + "KD"
 
 print "---------------"
-print "total: " + str(total)
+print "Total: %dKD" % (total) 
 

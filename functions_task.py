@@ -13,7 +13,6 @@ def check_birthday():
 	else:
 		calculate_age()
 
-
 def calculate_age():
 	age_year = todate.year - bday.year
 	age_month = todate.month - bday.month
