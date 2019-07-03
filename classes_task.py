@@ -21,10 +21,6 @@ class Employee:
 
 print "Welcome to HR Fail 2020\n"
 
-Employee.employment_year = raw_input ("Add: ")
-Employee.employment_year.get_working_years()
-print total_employment
-
 while options != "5":
 	print "Choose an Action\n"
 	print "\t1. Show Employees"
@@ -40,12 +36,17 @@ while options != "5":
 		Employee.age = raw_input("Age: ")
 		Employee.salary = raw_input("Flosatik: ")
 		Employee.employment_year = int(raw_input ("Employment Year: "))
-		
+		Employee.employment_year.get_working_years()
 
 		print Employee.name
 		print Employee.age
 		print Employee.salary
 		print Employee.employment_year
+		print total_employment
+
+
+
+
 
 
 
