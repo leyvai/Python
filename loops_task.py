@@ -8,13 +8,13 @@ while item != "done":
 	if item == "done":
 		break
 	quantity = input("Enter quantity: ")
-	price = input("Enter Price ")
-	cart = int(price) * int(quantity)
-	total = int(total) + cart 
+	price = float(input("Enter Price "))
+	cart = float(price) * float(quantity)
+	total = float(total) + float(cart)
 	batch = {
 	"item" : item,
-	"price" : int(price),
-	"quantity" : int(quantity),
+	"price" : float(price),
+	"quantity" : float(quantity),
 	}
 	lista.append (batch)
 
@@ -22,8 +22,8 @@ print ("---------------")
 print ("receipt")
 print ("---------------")
 for x in lista:
-	print (str(x["quantity"]) + " " + x["item"] + " " + str(x["price"]) + "KD")
+	print (str(x["quantity"]) + " " + x["item"] + " " + str(x["price"]) + " KD")
 
 print ("---------------")
-print ("Total: %dKD" % (total) )
+print ("Total: %d KD" % (total) )
 
